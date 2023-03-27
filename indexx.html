@@ -1,0 +1,278 @@
+<!doctype html>
+      <html>
+        <head>
+        <body>    
+            <title>Nagseonjae</title>
+            <link rel="shortcut icon" href="q.png">
+            <meta charset="UTF-8">
+            
+            
+            
+
+          <style>
+         body{
+            margin: 0;
+        padding: 0;
+        height: 2000px;
+        background-color: black; /* Initial background color */
+        animation-name: change-color; /* Name of the animation */
+        animation-duration: 5s; /* Duration of the animation */
+        animation-timing-function: linear; /* Timing function of the animation */
+        animation-fill-mode: forwards; /* Keep the last keyframe value after animation ends */
+      }
+      
+      @keyframes change-color {
+        0% {
+          background-color: white; /* Initial background color */
+        }
+        100% {
+          background-color: black; /* Final background color */
+        }
+      }
+           
+        #img1 {
+            position: absolute;
+            top: 0vh;
+            left: 0vh;
+            width: 37vw;
+            opacity: .9;
+      }
+      #img2 {
+            box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.2);
+            position: absolute;
+               top: 0vh;
+               left: 25vw;
+               width: 26vw;
+               z-index: 11;
+               opacity: 1;
+      }
+      #img3 {
+        box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.2);
+        position: absolute;
+               top: 19vh;
+               left: 18vw;
+               width: 500px;
+               height: 240px;
+               z-index: 11;
+      }
+      #img4 {
+            box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+            position: absolute;
+               top: -1vh;
+               left: 40vw;
+               width: 450px;
+               height: 1500px;
+               z-index: 11;
+               
+      }
+      #img5 {
+            box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.2);
+            position: fixed;
+               top: -1vh;
+               right: 0vw;
+               width: 26vw;
+               z-index: 11;
+               opacity: .7;
+      }
+      #img6 {
+            box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.2);
+            position: fixed;
+               bottom: -30vh;
+               right: -17vw;
+               width: 70vw;
+               z-index: 11;
+               opacity: .6;
+      }
+      
+      #img8 {
+            box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.2);
+            position: absolute;
+               bottom: 0vh;
+               left: 30vw;
+               width: 26vw;
+               z-index: 11;
+               opacity: .7;
+      }
+      #img9 {
+  position: fixed;
+  top: 32px;
+  left: 20vw;
+  width: 26vw;
+  height: auto;
+  z-index: 13;
+  opacity: 0.4;
+  transition: height 2s ease-in-out;
+}
+
+#img9:hover {
+  height: 20%;
+  opacity: 1;
+}
+
+    
+          
+      
+      #img10 {
+            box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.2);
+            position: absolute;
+               top: 280px;
+               left: 0vw;
+               width: 30vw;
+               z-index: 12;
+               opacity: .8;
+      }
+      #img11 {
+            box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.2);
+            position: fixed;
+               top: 430px;
+               left: -10vw;
+               width: 26vw;
+               z-index: 11;
+               opacity: .7;
+      }
+      #img12 {
+            box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.2);
+            position: absolute;
+               top: 400px;
+               left: 10vw;
+               width: 240px;
+               height: 6000px;
+               z-index: 11;
+               opacity: .7;
+      }
+      #img13 {
+            position: absolute;
+               top: 140px;
+               left: 10vw;
+               height: 50vw;
+               z-index: 9;
+               opacity: .6;
+      }
+      #img14 {
+            position: absolute;
+               top: 190px;
+               right: -8vw;
+               width: 50vw;
+               z-index: 11;
+               opacity: .7;
+      }
+      #click1 {
+  position: fixed;
+  top: 380px;
+  left: 10vw;
+  width: 50vw;
+  z-index: 13;
+  opacity: .7;
+}
+
+#click1:hover {
+  opacity: 0.6;
+  animation: glitch 0.3s infinite;
+}
+
+@keyframes glitch {
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translate(-5px, 5px);
+  }
+  40% {
+    transform: translate(-5px, -5px);
+  }
+  60% {
+    transform: translate(5px, 5px);
+  }
+  80% {
+    transform: translate(5px, -5px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+
+
+#img15 {
+            position: fixed;
+               top: 90px;
+               right: -4vw;
+               width: 200vw;
+               z-index: 11;
+               opacity: .4;
+      }
+      #img16 {
+  position: fixed;
+  top: 32px;
+  left: 60vw;
+  width: 26vw;
+  z-index: 13;
+  opacity: 0.6;
+  transition: transform 0.2s ease-out;
+}
+
+#img16:hover {
+  opacity: 1;
+  filter: grayscale(65%);
+  animation: glitch 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@keyframes glitch {
+  0% {
+    transform: translate(0, 0);
+  }
+  20% {
+    transform: translate(2px, -2px);
+  }
+  40% {
+    transform: translate(-2px, 2px);
+  }
+  60% {
+    transform: translate(2px, -2px);
+  }
+  80% {
+    transform: translate(-2px, 2px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+
+
+          </style>
+        </head>
+        <body>
+            
+       
+            
+
+            <div id="img1"><img id="img1" src="n.png"></div>
+            <div id="img2"><img id="img2" src="m.png"></div>
+            <div id="img3"><img id="img3" src="a.png"></div>
+            <div id="img4"><img id="img4" src="l.png"></div>
+            <div id="img5"><img id="img5" src="o.png"></div>
+            <div id="img6"><img id="img6" src="y.png"></div>
+          
+            <div id="img8"><img id="img8" src="e.png"></div>
+            <div id="img9"><img id="img9" src="q.png"></div>
+            <div id="img10"><img id="img10" src="k.png"></div>
+            <div id="img11"><img id="img11" src="f.png"></div>
+            <div id="img12"><img id="img12" src="l.png"></div>
+            <div id="img13"><img id="img13" src="h.png"></div>
+            <div id="img14"><img id="img14" src="v.png"></div>
+            <div id="img15"><img id="img15" src="wave3.gif"></div>
+            <div id="img16"><img src="qq.png" /></div>
+            
+            
+            <div> <a id="click1" href="https://www.youtube.com/watch?v=S5pDSRevHXE&t=323s"><img src="qq.png"></a> </div>
+           
+            
+              
+              <a href="https://fontsinuse.com/uses/33214/south-korean-road-signs" target="_blank">
+                <img id="img9" src="qq.png" alt="pink">
+              </a>
+
+
+        
+        </body>
+      </html>
